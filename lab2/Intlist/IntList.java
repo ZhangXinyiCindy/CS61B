@@ -104,6 +104,7 @@ public class IntList {
         if (A == null) {
             if (B != null){
                 IntList res = new IntList(B.first, null);
+                B = B.rest;
                 IntList ptr = res;
                 while (B != null){
                     ptr.rest = new IntList(B.first , null);
